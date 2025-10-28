@@ -1,0 +1,171 @@
+/* RESET BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ========== HEADER ========== */
+#main_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1e1e2f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 1000;
+}
+
+#header_left, #header_center, #header_right {
+    display: flex;
+    align-items: center;
+}
+
+#header_left button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#header_center {
+    flex: 1;
+    justify-content: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+#header_center::-webkit-scrollbar {
+    display: none;
+}
+
+.header_modules {
+    background: #2a2a40;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin: 0 0.5rem;
+    white-space: nowrap;
+}
+
+#header_right {
+    justify-content: flex-end;
+}
+
+/* ========== SIDEBAR ========== */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    z-index: 900;
+}
+
+#side_bar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background: #24243e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: left 0.3s ease;
+    z-index: 1001;
+}
+
+#side_bar.open {
+    left: 0;
+}
+
+#sideBar_top, #sideBar_bottom {
+    padding: 1rem;
+    padding-top: 3rem;
+}
+
+#sideBar_top {
+    overflow-y: auto;
+    flex-grow: 1;
+    scrollbar-width: none;
+}
+
+.sideBar_modules {
+    background: #35355e;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+}
+
+#sideBar_bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-bottom: 0.5rem;
+}
+
+#sideBar_bottom #user {
+    margin-bottom: 1rem;
+}
+
+#close_sidebar {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* ========== MAIN BODY ========== */
+#main_body {
+    flex: 1;
+    margin-top: 60px;
+    background: linear-gradient(#217773, #2a2a40);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* ========== FOOTER (MODULES OPTIONS) ========== */
+#zoom-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #1d1d2b;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+#zoomRange {
+    flex: 1;
+    accent-color: #ffaa0d;
+}
+
+#zoomControls button {
+    width: 30px;
+    height: 30px;
+    background: #ffaa0d;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
