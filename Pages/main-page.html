@@ -5,15 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Traffix Dashboard</title>
 
+  <link rel="stylesheet" href="../Style/CSS/fade-pages.css" defer>
+  <script src="../Code/JavaScript/fade.js" defer></script>
+
   <link rel="stylesheet" href="../Style/CSS/base.css">
   <link rel="stylesheet" href="../Style/CSS/main-page.css">
+  <link rel="stylesheet" href="../Style/CSS/gloabal-variables.css">
+  <link rel="stylesheet" href="../Style/CSS/Traffix.css">
 
   <script src="../Code/JavaScript/global-variables.js" defer></script>
   <script src="../Code/JavaScript/header.js" defer></script>
   <script src="../Code/JavaScript/main-page_footer.js" defer></script>
+  <script src="../Code/JavaScript/zoom.js" defer></script>
 </head>
 
-<body>
+<body class="page-in">
 
   <div id="main_header">
     <div id="header_left">
@@ -35,8 +41,11 @@
   </div>
 
   <div id="side_bar">
-    <button id="close_sidebar">✕</button>
     <div id="sideBar_top">
+      <div id="Traffix">TRAFFIX</div>
+      <button id="close_sidebar">✕</button>
+    </div>
+    <div id="sideBar_middle">
       <div class="sideBar_modules">Modulo 1</div>
       <div class="sideBar_modules">Modulo 2</div>
       <div class="sideBar_modules">Modulo 3</div>

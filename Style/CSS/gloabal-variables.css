@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'FredokaOne';
+    src: url('../Text/Fredoka_One/FredokaOne-Regular.ttf') format('truetype');
+}
+
+:root {
+    --Traffix-color: -webkit-linear-gradient(30deg,rgba(0, 255, 255, 1) 0%, rgba(155, 97, 194, 1) 65%, rgba(255, 38, 38, 1) 100%);
+    --Traffix-font: 'FredokaOne';
+
+    --body-background: linear-gradient(#217773, #2a2a40);
+
+    /* Animation timing tokens */
+    --anim-fast: 420ms;
+    --anim-medium: 700ms;
+    --anim-slow: 900ms;
+
+    /* Feature-specific durations */
+    --page-fade-duration: 800ms;      /* splash/pages fade */
+    --splash-min-duration: 1500ms;    /* minimum splash display */
+    --zoom-tween-duration: 120ms;     /* button/key zoom tween */
+    --zoom-input-duration: 100ms;     /* slider drag tween */
+}

@@ -5,78 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Traffix Dashboard</title>
 
-  <script src="../Code/JavaScript/global-variables.js"></script>
-  <script src="../Code/JavaScript/header.js"></script>
-  <script src="../Code/JavaScript/main-page_footer.js"></script>
+  <link rel="stylesheet" href="./Style/CSS/fade-pages.css" defer>
+  <script src="./Code/JavaScript/fade.js" defer></script>
 
-  <style src="../Style/CSS/base.css"></style>
-  <style src="../Style/CSS/main-page.css"></style>
+  <link rel="stylesheet" href="./Style/CSS/gloabal-variables.css">
+  <link rel="stylesheet" href="./Style/CSS/splash-screen.css">
+  <link rel="stylesheet" href="./Style/CSS/Traffix.css">
+
+  <script src="./Code/JavaScript/splash-screen-load.js" defer></script>
+
 </head>
 
-<body>
+<body class="page-in">
 
-  <div id="main_header">
-    <div id="header_left">
-      <button id="open_sidebar">☰</button>
-    </div>
-
-    <div id="header_center">
-      <div class="header_modules">Modulo 1</div>
-      <div class="header_modules">Modulo 2</div>
-      <div class="header_modules">Modulo 3</div>
-      <div class="header_modules">Modulo 4</div>
-      <div class="header_modules">Modulo 5</div>
-      <div class="header_modules">Modulo 6</div>
-    </div>
-
-    <div id="header_right">
-      <div id="user">👤 User</div>
-    </div>
+  <div id="main-body">
+    <h1 id="Traffix">TRAFFIX</h1>
   </div>
-
-  <div id="side_bar">
-    <button id="close_sidebar">✕</button>
-    <div id="sideBar_top">
-      <div class="sideBar_modules">Modulo 1</div>
-      <div class="sideBar_modules">Modulo 2</div>
-      <div class="sideBar_modules">Modulo 3</div>
-      <div class="sideBar_modules">Modulo 4</div>
-      <div class="sideBar_modules">Modulo 5</div>
-      <div class="sideBar_modules">Modulo 6</div>
-    </div>
-    <div id="sideBar_bottom">
-      <div id="user">👤 Info Utente</div>
-      <div id="settings">⚙️ Impostazioni</div>
-    </div>
-  </div>
-
-  <div id="overlay"></div>
-
-  <div id="main_body">
-    <div id="modules">
-      <div class="body_modules">Modulo 1</div>
-      <div class="body_modules w2 h2">Modulo 2</div>
-      <div class="body_modules h2">Modulo 3</div>
-      <div class="body_modules">Modulo 4</div>
-      <div class="body_modules w2 h3">Modulo 5</div>
-      <div class="body_modules h3">Modulo 6</div>
-    </div>
-  </div>
-
-  <div id="modules_options">
-      <div>Visualizzazione:</div>
-      <div>
-        <div id="zoom-controls">
-          <button id="zoomOut">−</button>
-          <label for="zoomRange">Zoom:</label>
-          <input type="range" id="zoomRange" min="0.5" max="2" step="0.1" value="1">
-          <button id="zoomIn">+</button>
-          <span id="zoomValue">100%</span>
-        </div>
-        <button id="grid_view">Griglia</button>
-        <button id="list_view">Lista</button>
-      </div>
-    </div>
 
 </body>
 </html>

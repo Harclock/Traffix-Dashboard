@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+
+#main-body{
+    background-image: url("../../Multimedial/Img/Splash_Screen.png");
+    align-items: center;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1{
+    margin: 0;
+    position: relative;
+    font-size: 10rem;
+    text-align: center;
+}

@@ -61,6 +61,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem; /* add horizontal spacing between groups */
+}
+
+#modules_options div{
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem; /* space between items inside groups */
+    align-items: center;
 }
 
 #modules_options button {
