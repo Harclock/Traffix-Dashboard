@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 
-#main-body{
+.main-body{
     background-image: url("../../Multimedial/Img/Splash_Screen.png");
     align-items: center;
 

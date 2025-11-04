@@ -14,7 +14,7 @@ body {
 }
 
 /* ========== HEADER ========== */
-#main_header {
+.main-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -29,12 +29,12 @@ body {
     z-index: 1000;
 }
 
-#header_left, #header_center, #header_right {
+.header-left, .header-center, .header-right {
     display: flex;
     align-items: center;
 }
 
-#header_left button {
+.header-left button {
     background: none;
     border: none;
     color: white;
@@ -42,14 +42,14 @@ body {
     cursor: pointer;
 }
 
-#header_center {
+.header-center {
     flex: 1;
     justify-content: center;
     overflow-x: auto;
     scrollbar-width: none;
 }
 
-#header_center::-webkit-scrollbar {
+.header-center::-webkit-scrollbar {
     display: none;
 }
 
@@ -61,12 +61,12 @@ body {
     white-space: nowrap;
 }
 
-#header_right {
+.header-right {
     justify-content: flex-end;
 }
 
 /* ========== SIDEBAR ========== */
-#overlay {
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -77,7 +77,7 @@ body {
     z-index: 900;
 }
 
-#side_bar {
+.sidebar {
     position: fixed;
     top: 0;
     left: -300px;
@@ -92,16 +92,16 @@ body {
     z-index: 1001;
 }
 
-#side_bar.open {
+.sidebar.open {
     left: 0;
 }
 
-#sideBar_top, #sideBar_middle, #sideBar_bottom {
+.sidebar-top, .sidebar-middle, .sidebar-bottom {
     padding: 1rem;
     padding-top: 3rem;
 }
 
-#sideBar_top {
+.sidebar-top {
     border-bottom: 1px solid rgba(255,255,255,0.2);
     margin-top: 0.5rem;
     padding-top: 0;
@@ -111,29 +111,29 @@ body {
     justify-content: space-between;
 }
 
-#sideBar_middle {
+.sidebar-middle {
     overflow-y: auto;
     flex-grow: 1;
     scrollbar-width: none;
 }
 
-.sideBar_modules {
+.sidebar-modules {
     background: #35355e;
     padding: 0.8rem;
     margin-bottom: 0.5rem;
     border-radius: 8px;
 }
 
-#sideBar_bottom {
+.sidebar-bottom {
     border-top: 1px solid rgba(255,255,255,0.2);
     margin-bottom: 0.5rem;
 }
 
-#sideBar_bottom #user {
+.sidebar-bottom .user {
     margin-bottom: 1rem;
 }
 
-#close_sidebar {
+.close-sidebar {
     background: none;
     border: none;
     color: white;
@@ -141,12 +141,12 @@ body {
     cursor: pointer;
 }
 
-#sideBar_top #Traffix{
+.sidebar-top .traffix{
     font-size: 1.5rem;
 }
 
 /* ========== MAIN BODY ========== */
-#main_body {
+.main-body {
     flex: 1;
     margin-top: 60px;
     background: var(--body-background);
@@ -157,7 +157,7 @@ body {
 }
 
 /* ========== FOOTER (MODULES OPTIONS) ========== */
-#zoom-controls {
+.zoom-controls {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -167,12 +167,12 @@ body {
     font-family: sans-serif;
 }
 
-#zoomRange {
+.zoom-range {
     flex: 1;
     accent-color: #ffaa0d;
 }
 
-#zoomControls button {
+.zoom-controls button {
     width: 30px;
     height: 30px;
     background: #ffaa0d;

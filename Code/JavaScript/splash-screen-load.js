@@ -38,7 +38,7 @@ async function handleSplashRedirect() {
   }
 
   // Fade-out dello splash
-  const splash = document.getElementById('main-body');
+  const splash = document.querySelector('.main-body');
   splash.style.transition = `opacity ${FADE_DURATION}ms ease`;
   splash.style.opacity = '0';
   await wait(FADE_DURATION);

@@ -1,5 +1,5 @@
 /* ======== LOGIN PAGE STYLES ======== */
-#main_body {
+.main-body {
   padding-top: 60px; /* account for fixed header */
   flex: 1;
   display: flex;
@@ -10,7 +10,7 @@
 }
 
 /* Moved from inline <style> in login.html */
-#login_container {
+.login-container {
   display: flex;
   justify-content: center;
   align-items: center;

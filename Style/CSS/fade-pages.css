@@ -20,8 +20,8 @@
 }
 
 /* Give identical elements across pages the same transition name to “morph” */
-#Traffix { view-transition-name: brand; }
-#main_body { view-transition-name: content; }
+.traffix { view-transition-name: brand; }
+.main-body { view-transition-name: content; }
 /* Optional default cross-fade timing */
 ::view-transition-group(root) { animation-duration: 500ms; }
 body{ background: var(--body-background); }
