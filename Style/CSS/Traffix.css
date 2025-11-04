@@ -1,9 +1,10 @@
 .traffix {
-    font-family: var(--Traffix-font), sans-serif;
-    letter-spacing: 0.1em;
-    z-index: 1;
-    background: var(--Traffix-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(2px 2px #333);
+	font-family: var(--Traffix-font), sans-serif;
+	letter-spacing: 0.1em;
+	z-index: 1;
+	background: var(--Traffix-color);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	filter: drop-shadow(2px 2px #333);
 }
