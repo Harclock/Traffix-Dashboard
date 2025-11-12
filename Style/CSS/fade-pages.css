@@ -1,27 +1,33 @@
 .page-in {
-    -webkit-animation: fadeIn var(--anim-medium) ease-in;
-    animation: fadeIn var(--anim-medium) ease-in;
+	-webkit-animation: fadeIn var(--anim-medium) ease-in;
+	animation: fadeIn var(--anim-medium) ease-in;
 }
 
 .page-out {
-    -webkit-transition: opacity var(--anim-medium);
-    transition: opacity var(--anim-medium);
-    opacity: 0;
+	-webkit-transition: opacity var(--anim-medium);
+	transition: opacity var(--anim-medium);
+	opacity: 0;
 }
 
 @-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
-/* Give identical elements across pages the same transition name to “morph” */
-.traffix { view-transition-name: brand; }
-.main-body { view-transition-name: content; }
 /* Optional default cross-fade timing */
-::view-transition-group(root) { animation-duration: 500ms; }
-body{ background: var(--body-background); }
+::view-transition-group(root) {
+	animation-duration: 500ms;
+}
