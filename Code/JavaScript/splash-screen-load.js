@@ -28,8 +28,8 @@ async function handleSplashRedirect() {
 
   // Determina la pagina di destinazione
   const target = hasRememberMe || hasSession
-    ? './pages/main-page.html'
-    : './pages/login.html';
+    ? './Pages/main-page.html'
+    : './Pages/login.html';
 
   // Attende che il tempo minimo sia trascorso
   const elapsed = Date.now() - startTime;
