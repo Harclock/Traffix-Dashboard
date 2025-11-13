@@ -5,10 +5,6 @@ body {
 
 .main-body {
 	padding-top: 6rem; /* account for fixed header */
-	flex: 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	background: var(--body-background);
 	min-height: calc(100vh - 6rem);
 	width: 100%;
@@ -16,13 +12,12 @@ body {
 
 /* Moved from inline <style> in login.html */
 .login-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: grid;
+	place-items: center;
 	width: 100%;
 }
 
-.login_box {
+.login-box {
 	background: rgba(20, 20, 35, 0.95);
 	border-radius: 1.6rem;
 	box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.4);
@@ -37,7 +32,7 @@ body {
 	animation: loginSlideIn var(--anim-slow) ease;
 }
 
-.login_box h2 {
+.login-box h2 {
 	font-family: var(--Traffix-font);
 	background: var(--Traffix-color);
 	-webkit-background-clip: text;
@@ -45,13 +40,13 @@ body {
 	margin-bottom: 1rem;
 }
 
-.login_box form {
+.login-box form {
 	display: flex;
 	flex-direction: column;
 	gap: 1.2rem;
 }
 
-.login_box input {
+.login-box input {
 	width: 100%;
 	padding: 1.3rem 1.6rem;
 	border-radius: 8px;
@@ -62,12 +57,12 @@ body {
 	transition: background 0.2s;
 }
 
-.login_box input:focus {
+.login-box input:focus {
 	outline: none;
 	background: #35355e;
 }
 
-.login_box button {
+.login-box button {
 	width: 100%;
 	padding: 1.44rem;
 	background: linear-gradient(90deg, #09aebf, #9b61c2);
@@ -79,7 +74,7 @@ body {
 	transition: opacity 0.3s;
 }
 
-.login_box button:hover {
+.login-box button:hover {
 	opacity: 0.9;
 }
 
@@ -372,7 +367,7 @@ body {
 }
 
 /* Make the form side seamless with the image inside the composite */
-.login-composite .login_box {
+.login-composite .login-box {
 	background: transparent;
 	box-shadow: none;
 	border-radius: 0;
