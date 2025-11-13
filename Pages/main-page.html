@@ -1,92 +1,96 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Traffix Dashboard</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Traffix Dashboard</title>
 
-  <link rel="stylesheet" href="../Style/CSS/fade-pages.css" defer>
-  <script src="../Code/JavaScript/fade.js" defer></script>
+		<link rel="stylesheet" href="../Style/CSS/base.css" />
+		<link rel="stylesheet" href="../Style/CSS/main-page.css" />
 
-  <link rel="stylesheet" href="../Style/CSS/base.css">
-  <link rel="stylesheet" href="../Style/CSS/main-page.css">
-  <link rel="stylesheet" href="../Style/CSS/gloabal-variables.css">
-  <link rel="stylesheet" href="../Style/CSS/Traffix.css">
+		<link rel="stylesheet" href="../Style/CSS/fade-pages.css" defer />
+		<script src="../Code/JavaScript/fade.js" defer></script>
 
-  <script src="../Code/JavaScript/global-variables.js" defer></script>
-  <script src="../Code/JavaScript/header.js" defer></script>
-  <script src="../Code/JavaScript/main-page_footer.js" defer></script>
-  <script src="../Code/JavaScript/zoom.js" defer></script>
-</head>
+		<script src="../Code/JavaScript/global-variables.js" defer></script>
+		<script src="../Code/JavaScript/header.js" defer></script>
+		<script src="../Code/JavaScript/main-page_footer.js" defer></script>
+		<script src="../Code/JavaScript/zoom.js" defer></script>
+	</head>
 
-<body class="page-in">
+	<body class="page-in">
+		<div class="main-header">
+			<div class="header-left">
+				<button class="open-sidebar">☰</button>
+			</div>
 
-  <div class="main-header">
-    <div class="header-left">
-      <button class="open-sidebar">☰</button>
-    </div>
+			<div class="header-center">
+				<div class="header-modules">Modulo 1</div>
+				<div class="header-modules">Modulo 2</div>
+				<div class="header-modules">Modulo 3</div>
+				<div class="header-modules">Modulo 4</div>
+				<div class="header-modules">Modulo 5</div>
+				<div class="header-modules">Modulo 6</div>
+			</div>
 
-    <div class="header-center">
-      <div class="header_modules">Modulo 1</div>
-      <div class="header_modules">Modulo 2</div>
-      <div class="header_modules">Modulo 3</div>
-      <div class="header_modules">Modulo 4</div>
-      <div class="header_modules">Modulo 5</div>
-      <div class="header_modules">Modulo 6</div>
-    </div>
+			<div class="header-right">
+				<div id="user">👤 User</div>
+			</div>
+		</div>
 
-    <div class="header-right">
-      <div id="user">👤 User</div>
-    </div>
-  </div>
+		<div class="sidebar">
+			<div class="sidebar-top">
+				<div class="traffix">TRAFFIX</div>
+				<button class="close-sidebar">✕</button>
+			</div>
+			<div class="sidebar-middle">
+				<div class="sidebar-modules">Modulo 1</div>
+				<div class="sidebar-modules">Modulo 2</div>
+				<div class="sidebar-modules">Modulo 3</div>
+				<div class="sidebar-modules">Modulo 4</div>
+				<div class="sidebar-modules">Modulo 5</div>
+				<div class="sidebar-modules">Modulo 6</div>
+			</div>
+			<div class="sidebar-bottom">
+				<div class="user"></div>
+				<div class="settings"></div>
+			</div>
+		</div>
 
-  <div class="sidebar">
-    <div class="sidebar-top">
-      <div class="traffix">TRAFFIX</div>
-      <button class="close-sidebar">✕</button>
-    </div>
-    <div class="sidebar-middle">
-      <div class="sidebar-modules">Modulo 1</div>
-      <div class="sidebar-modules">Modulo 2</div>
-      <div class="sidebar-modules">Modulo 3</div>
-      <div class="sidebar-modules">Modulo 4</div>
-      <div class="sidebar-modules">Modulo 5</div>
-      <div class="sidebar-modules">Modulo 6</div>
-    </div>
-    <div class="sidebar-bottom">
-      <div class="user"></div>
-      <div class="settings"></div>
-    </div>
-  </div>
+		<div class="overlay"></div>
 
-  <div class="overlay"></div>
+		<div class="main-body">
+			<div class="modules">
+				<div class="body-modules">Modulo 1</div>
+				<div class="body-modules w2 h2">Modulo 2</div>
+				<div class="body-modules h2">Modulo 3</div>
+				<div class="body-modules">Modulo 4</div>
+				<div class="body-modules w2 h3">Modulo 5</div>
+				<div class="body-modules h3">Modulo 6</div>
+			</div>
+		</div>
 
-  <div class="main-body">
-    <div class="modules">
-      <div class="body_modules">Modulo 1</div>
-      <div class="body_modules w2 h2">Modulo 2</div>
-      <div class="body_modules h2">Modulo 3</div>
-      <div class="body_modules">Modulo 4</div>
-      <div class="body_modules w2 h3">Modulo 5</div>
-      <div class="body_modules h3">Modulo 6</div>
-    </div>
-  </div>
-
-  <div class="modules-options">
-      <div>Visualizzazione:</div>
-      <div>
-        <div class="zoom-controls">
-          <button class="zoom-out">−</button>
-          <label class="zoom-label">Zoom:
-            <input type="range" class="zoom-range" min="0.5" max="2" step="0.1" value="1">
-          </label>
-          <button class="zoom-in">+</button>
-          <span class="zoom-value">100%</span>
-        </div>
-        <button class="grid-view-btn">Griglia</button>
-        <button class="list-view-btn">Lista</button>
-      </div>
-    </div>
-
-</body>
+		<div class="modules-options">
+			<div>Visualizzazione:</div>
+			<div>
+				<div class="zoom-controls">
+					<button class="zoom-out">−</button>
+					<label class="zoom-label"
+						>Zoom:
+						<input
+							type="range"
+							class="zoom-range"
+							min="0.5"
+							max="2"
+							step="0.1"
+							value="1"
+						/>
+					</label>
+					<button class="zoom-in">+</button>
+					<span class="zoom-value">100%</span>
+				</div>
+				<button class="grid-view-btn">Griglia</button>
+				<button class="list-view-btn">Lista</button>
+			</div>
+		</div>
+	</body>
 </html>

@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Traffix Dashboard</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Traffix Dashboard</title>
 
-  <link rel="stylesheet" href="../Style/CSS/fade-pages.css" defer>
-  <script src="../Code/JavaScript/fade.js" defer></script>
+		<link rel="stylesheet" href="../Style/CSS/fade-pages.css" defer />
+		<script src="../Code/JavaScript/fade.js" defer></script>
 
-  <link rel="stylesheet" href="../Style/CSS/base.css">
-  <link rel="stylesheet" href="../Style/CSS/gloabal-variables.css">
-  <link rel="stylesheet" href="../Style/CSS/Traffix.css">
-  <link rel="stylesheet" href="../Style/CSS/login.css">
+		<link rel="stylesheet" href="../Style/CSS/base.css" />
+		<link rel="stylesheet" href="../Style/CSS/gloabal-variables.css" />
+		<link rel="stylesheet" href="../Style/CSS/Traffix.css" />
+		<link rel="stylesheet" href="../Style/CSS/login.css" />
 
-  <script src="../Code/JavaScript/global-variables.js" defer></script>
-</head>
+		<script src="../Code/JavaScript/global-variables.js" defer></script>
+	</head>
 
-<body class="page-in">
+	<body class="page-in">
+		<div id="main_header">
+			<div id="header_center">
+				<h1 id="traffix">TRAFFIX</h1>
+			</div>
+		</div>
 
-  <div id="main_header">
-    <div id="header_center">
-      <h1 id="Traffix">TRAFFIX</h1>
-    </div>
-  </div>
+		<div id="main_body">
+			<div id="login_container">
+				<div
+					class="login-composite"
+					style="
+						--login-visual-image: url('https://hips.hearstapps.com/hmg-prod/images/lake-carezza-karersee-trentino-alto-adige-italy-royalty-free-image-1755119336.pjpeg');
+					"
+				>
+					<div class="login_box">
+						<div class="logo-circle">
+							<img src="../Multimedial/Img/logo.png" alt="Traffix Logo" />
+						</div>
+						<h2>Accedi al tuo account</h2>
 
-  <div id="main_body">
-    <div id="login_container">
-      <div class="login-composite" style="--login-visual-image: url('https://hips.hearstapps.com/hmg-prod/images/lake-carezza-karersee-trentino-alto-adige-italy-royalty-free-image-1755119336.pjpeg');">
-        <div class="composite-visual" aria-hidden="true"></div>
-        <div class="login_box">
-          <div class="logo-circle"><img src="../Multimedial/Img/logo.png" alt="Traffix Logo"></div>
-          <h2>Accedi al tuo account</h2>
+						<form>
+							<input type="email" placeholder="Email" required />
+							<input type="password" placeholder="Password" required />
 
-          <form>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
+							<div class="options">
+								<label><input type="checkbox" /> Ricordami</label>
+								<a href="#" style="color: #9b61c2; text-decoration: none"
+									>Password dimenticata?</a
+								>
+							</div>
 
-            <div class="options">
-              <label><input type="checkbox"> Ricordami</label>
-              <a href="#" style="color:#9b61c2; text-decoration:none;">Password dimenticata?</a>
-            </div>
+							<button type="submit">Login</button>
+						</form>
 
-            <button type="submit">Login</button>
-          </form>
+						<div class="oauth-sep"><span>oppure</span></div>
+						<div class="oauth-buttons">
+							<a class="oauth-btn google" href="/auth/google"
+								>Continua con Google</a
+							>
+							<a class="oauth-btn cie" href="/auth/cie">Accedi con CIE</a>
+						</div>
 
-          <div class="oauth-sep"><span>oppure</span></div>
-          <div class="oauth-buttons">
-            <a class="oauth-btn google" href="/auth/google">Continua con Google</a>
-            <a class="oauth-btn cie" href="/auth/cie">Accedi con CIE</a>
-          </div>
-
-          <div class="signup">
-            Non hai un account? <a href="#">Registrati</a>
-          </div>
-        </div>
-        <div class="composite-visual" aria-hidden="true"></div>
-      </div>
-    </div>
-  </div>
-
-</body>
+						<div class="signup">
+							Non hai un account? <a href="#">Registrati</a>
+						</div>
+					</div>
+					<div class="composite-visual" aria-hidden="true"></div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
