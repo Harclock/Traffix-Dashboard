@@ -66,7 +66,7 @@ body {
 }
 
 /* ========== FOOTER (MODULES OPTIONS) ========== */
-.modules-options {
+.view-options {
 	position: sticky;
 	background: #1e1e2f;
 	color: white;
@@ -80,14 +80,14 @@ body {
 	gap: 1.6rem; /* add horizontal spacing between groups */
 }
 
-.modules-options div {
+.view-options div {
 	display: flex;
 	flex-direction: row;
 	gap: 1.2rem; /* space between items inside groups */
 	align-items: center;
 }
 
-.modules-options button {
+.view-options button {
 	background: #35355e;
 	border: none;
 	color: white;

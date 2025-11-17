@@ -21,6 +21,12 @@ body {
 
 :root {
 	font-size: 10px;
+
+	--dark-grey-100: #333333;
+
+	--dark-blue-100: #2a2a40;
+	--dark-blue-300: #1e1e2f;
+
 	--Traffix-color: -webkit-linear-gradient(
 		30deg,
 		rgba(0, 255, 255, 1) 0%,
@@ -29,7 +35,7 @@ body {
 	);
 	--Traffix-font: "FredokaOne";
 
-	--body-background: linear-gradient(#217773, #2a2a40);
+	--body-background: linear-gradient(#217773, var(--dark-blue-100));
 
 	/* Animation timing tokens */
 	--anim-fast: 420ms;
@@ -98,7 +104,7 @@ body {
 }
 
 .header-modules {
-	background: #2a2a40;
+	background: var(--dark-blue-100);
 	padding: 0.8rem 1.6rem;
 	border-radius: 0.8rem;
 	margin: 0 0.8rem;
