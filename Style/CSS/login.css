@@ -114,13 +114,13 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto 1.6rem;
-	box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0.4rem 1.5rem rgba(0 0 0 / 0.3);
 }
 .logo-circle img {
 	width: 9rem;
 	height: 9rem;
 	object-fit: contain;
-	filter: drop-shadow(0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.4));
+	filter: drop-shadow(0.1rem 0.1rem 0.2rem rgba(0 0 0 / 0.4));
 }
 
 .login-wrapper {
@@ -133,9 +133,9 @@ body {
 }
 
 .login-card {
-	background: rgba(20, 20, 35, 0.95);
+	background: rgba(20 20 35 / 0.95);
 	border-radius: 1.6rem;
-	box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 2.5rem rgba(0 0 0 / 0.4);
 	padding: 4rem;
 	width: 100%;
 	color: #fff;
@@ -178,7 +178,7 @@ body {
 	background: var(--Traffix-color);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	filter: drop-shadow(0.2rem 0.2rem #333);
+	filter: drop-shadow(0.2rem 0.2rem var(--dark-grey-100));
 }
 
 /* Form Styling */
@@ -199,7 +199,7 @@ body {
 
 .login-form label span {
 	font-size: 1.44rem;
-	color: #ccc;
+	color: red;
 	font-weight: 500;
 }
 
