@@ -1,18 +1,3 @@
-/* RESET BASE */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
-}
-
-body {
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-	overflow: hidden;
-}
-
 /* ========== GLOBAL VARIABLES =========== */
 @font-face {
 	font-family: "FredokaOne";
@@ -22,13 +7,20 @@ body {
 :root {
 	font-size: 10px;
 
+	--link-color-1: #9b61c2;
+	--link-color-2: #09aebf;
+
 	--dark-grey-100: #333333;
+	--dark-grey-300: #444444;
 
 	--dark-blue-100: #2a2a40;
 	--dark-blue-300: #24243e;
 	--dark-blue-500: #1e1e2f;
 
-	--lighter-blue-300: #35355e;
+	--lighter-blue-100: #0066cc;
+	--lighter-blue-300: #0052a3;
+
+	--lighter-blue-700: #35355e;
 
 	--orange-300: #ffaa0d;
 
@@ -54,6 +46,30 @@ body {
 	--zoom-input-duration: 100ms; /* slider drag tween */
 }
 
+/* RESET BASE */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	display: flex;
+	font-size: 1.6rem;
+	flex-direction: column;
+	height: 100vh;
+	overflow: hidden;
+}
+
+a {
+	color: var(--link-color-2);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
 /* ========== TITLE =========== */
 .traffix {
 	font-family: var(--Traffix-font), sans-serif;
@@ -67,10 +83,8 @@ body {
 }
 
 /* ========== HEADER ========== */
-.main-header {
+header {
 	position: fixed;
-	top: 0;
-	left: 0;
 	width: 100%;
 	height: 6rem;
 	background-color: var(--dark-blue-500);
@@ -89,7 +103,7 @@ body {
 	align-items: center;
 }
 
-.header-left button {
+#open-sidebar-button {
 	background: none;
 	border: none;
 	color: white;
@@ -128,12 +142,13 @@ body {
 	width: 100%;
 	height: 100%;
 	background: black;
-	opacity: 0.4;
-	display: none;
+	opacity: 0;
 	z-index: 900;
+	transition: opacity 450ms;
+	pointer-events: none;
 }
 
-.sidebar {
+aside {
 	position: fixed;
 	top: 0;
 	left: -30rem;
@@ -171,13 +186,13 @@ body {
 	justify-content: space-between;
 }
 
-.sidebar-middle {
+nav > ul {
 	overflow-y: auto;
 	flex-grow: 1;
 	scrollbar-width: none;
 }
 
-.sidebar-modules {
+nav > ul li {
 	background: var(--dark-blue-100);
 	padding: 1.3rem;
 	margin-bottom: 0.8rem;
@@ -193,7 +208,7 @@ body {
 	margin-bottom: 1.6rem;
 }
 
-.close-sidebar {
+#close-sidebar-button {
 	background: none;
 	border: none;
 	color: white;
@@ -206,7 +221,7 @@ body {
 }
 
 /* ========== MAIN BODY ========== */
-.main-body {
+main {
 	flex: 1;
 	margin-top: 6rem;
 	background: var(--body-background);
@@ -214,26 +229,4 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	overflow: hidden;
-}
-
-/* ========== FOOTER (MODULES OPTIONS) ========== */
-.zoom-controls {
-	display: flex;
-	align-items: center;
-	gap: 0.8rem;
-	padding: 0.8rem 1.6rem;
-	font-family: sans-serif;
-}
-
-.zoom-range {
-	flex: 1;
-	accent-color: var(--orange-300);
-}
-
-.zoom-controls button {
-	width: 3rem;
-	height: 3rem;
-	background: var(--orange-300);
-	border: none;
-	cursor: pointer;
 }

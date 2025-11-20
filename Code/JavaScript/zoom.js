@@ -1,10 +1,10 @@
 // Zoom controls using the CSS `zoom` property with spam-safe, smooth tweening
 (function () {
 	const modulesEl = document.querySelector(".modules");
-	const range = document.querySelector(".zoom-range");
-	const valueEl = document.querySelector(".zoom-value");
-	const btnIn = document.querySelector(".zoom-in");
-	const btnOut = document.querySelector(".zoom-out");
+	const range = document.getElementById("zoom-range");
+	const valueEl = document.getElementById("zoom-value");
+	const btnIn = document.getElementById("zoom-in");
+	const btnOut = document.getElementById("zoom-out");
 
 	if (!modulesEl || !range || !valueEl) return;
 

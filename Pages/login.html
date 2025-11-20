@@ -10,60 +10,47 @@
 
 		<link rel="stylesheet" href="../Style/CSS/base.css" />
 		<link rel="stylesheet" href="../Style/CSS/login.css" />
-
-		<script src="../Code/JavaScript/global-variables.js" defer></script>
 	</head>
 
 	<body class="page-in">
-		<div class="main-header">
-			<div class="header-center">
-				<h1 class="traffix">TRAFFIX</h1>
-			</div>
-		</div>
+		<header>
+			<h1 class="traffix">TRAFFIX</h1>
+		</header>
 
-		<div class="main-body">
-			<div class="login-container">
-				<div
-					class="login-composite"
-					style="
-						--login-visual-image: url('https://hips.hearstapps.com/hmg-prod/images/lake-carezza-karersee-trentino-alto-adige-italy-royalty-free-image-1755119336.pjpeg');
-					"
-				>
-					<div class="login-box">
-						<div class="logo-circle">
-							<img src="../Multimedial/Img/logo.png" alt="Traffix Logo" />
-						</div>
-						<h2>Accedi al tuo account</h2>
-
-						<form>
-							<input type="email" placeholder="Email" required />
-							<input type="password" placeholder="Password" required />
-
-							<div class="options">
-								<label><input type="checkbox" /> Ricordami</label>
-								<a href="#" style="color: #9b61c2; text-decoration: none"
-									>Password dimenticata?</a
-								>
-							</div>
-
-							<button type="submit">Login</button>
-						</form>
-
-						<div class="oauth-sep"><span>oppure</span></div>
-						<div class="oauth-buttons">
-							<a class="oauth-btn google" href="/auth/google"
-								>Continua con Google</a
-							>
-							<a class="oauth-btn cie" href="/auth/cie">Accedi con CIE</a>
-						</div>
-
-						<div class="signup">
-							Non hai un account? <a href="#">Registrati</a>
-						</div>
+		<main>
+			<div class="login-wrapper">
+				<div class="login-box">
+					<div class="logo-circle">
+						<img src="../Multimedial/Img/logo.png" alt="Traffix Logo" />
 					</div>
-					<div class="composite-visual" aria-hidden="true"></div>
+					<h2>Accedi al tuo account</h2>
+
+					<form>
+						<input type="email" placeholder="Email" required />
+						<input type="password" placeholder="Password" required />
+
+						<div class="options">
+							<label><input type="checkbox" /> Ricordami</label>
+							<a href="#">Password dimenticata?</a>
+						</div>
+
+						<button type="submit">Login</button>
+					</form>
+
+					<div class="oauth-sep"><span>oppure</span></div>
+					<div class="oauth-buttons">
+						<a class="oauth-btn google" href="/auth/google">
+							Continua con Google
+						</a>
+						<a class="oauth-btn cie" href="/auth/cie">Accedi con CIE</a>
+					</div>
+
+					<div class="signup">
+						Non hai un account? <a href="#">Registrati</a>
+					</div>
 				</div>
+				<div class="composite-visual" aria-hidden="true"></div>
 			</div>
-		</div>
+		</main>
 	</body>
 </html>

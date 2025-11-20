@@ -11,54 +11,49 @@
 		<link rel="stylesheet" href="../Style/CSS/fade-pages.css" defer />
 		<script src="../Code/JavaScript/fade.js" defer></script>
 
-		<script src="../Code/JavaScript/global-variables.js" defer></script>
 		<script src="../Code/JavaScript/header.js" defer></script>
 		<script src="../Code/JavaScript/main-page_footer.js" defer></script>
 		<script src="../Code/JavaScript/zoom.js" defer></script>
 	</head>
 
 	<body class="page-in">
-		<header class="main-header">
-			<div class="header-left">
-				<button class="open-sidebar">☰</button>
-			</div>
+		<header>
+			<button id="open-sidebar-button">☰</button>
 
-			<div class="header-center">
-				<div class="header-modules">Modulo 1</div>
-				<div class="header-modules">Modulo 2</div>
-				<div class="header-modules">Modulo 3</div>
-				<div class="header-modules">Modulo 4</div>
-				<div class="header-modules">Modulo 5</div>
-				<div class="header-modules">Modulo 6</div>
-			</div>
+			<h1 class="traffix">TRAFFIX</h1>
 
-			<div class="header-right">
-				<div id="user">👤 User</div>
-			</div>
+			<div id="user">👤 User</div>
 		</header>
 
-		<div class="sidebar">
+		<aside class="sidebar">
 			<div class="sidebar-top">
-				<div class="traffix">TRAFFIX</div>
-				<button class="close-sidebar">✕</button>
+				<h1 class="traffix">TRAFFIX</h1>
+				<button id="close-sidebar-button">✕</button>
 			</div>
-			<div class="sidebar-middle">
-				<div class="sidebar-modules">Modulo 1</div>
-				<div class="sidebar-modules">Modulo 2</div>
-				<div class="sidebar-modules">Modulo 3</div>
-				<div class="sidebar-modules">Modulo 4</div>
-				<div class="sidebar-modules">Modulo 5</div>
-				<div class="sidebar-modules">Modulo 6</div>
-			</div>
+
+			<nav class="sidebar-middle">
+				<ul>
+					<li>Modulo 1</li>
+					<li>Modulo 2</li>
+					<li>Modulo 3</li>
+					<li>Modulo 4</li>
+					<li>Modulo 5</li>
+					<li>Modulo 6</li>
+				</ul>
+			</nav>
+
+			<!--TODO ------------->
 			<div class="sidebar-bottom">
 				<div class="user"></div>
+				<div class="home-button"></div>
 				<div class="settings"></div>
 			</div>
-		</div>
+			<!--TODO ------------->
+		</aside>
 
 		<div class="overlay"></div>
 
-		<div class="main-body">
+		<main>
 			<div class="modules">
 				<div class="body-modules">Modulo 1</div>
 				<div class="body-modules w2 h2">Modulo 2</div>
@@ -67,30 +62,29 @@
 				<div class="body-modules w2 h3">Modulo 5</div>
 				<div class="body-modules h3">Modulo 6</div>
 			</div>
-		</div>
+		</main>
 
-		<div class="view-options">
-			<div>Visualizzazione:</div>
+		<footer class="view-options">
 			<div>
-				<div class="zoom-controls">
-					<button class="zoom-out">−</button>
-					<label class="zoom-label"
-						>Zoom:
-						<input
-							type="range"
-							class="zoom-range"
-							min="0.5"
-							max="2"
-							step="0.1"
-							value="1"
-						/>
-					</label>
-					<button class="zoom-in">+</button>
-					<span class="zoom-value">100%</span>
-				</div>
-				<button class="grid-view-btn">Griglia</button>
-				<button class="list-view-btn">Lista</button>
+				<span>Visualizzazione: </span>
+				<button id="grid-view-btn">Griglia</button>
+				<button id="list-view-btn">Lista</button>
 			</div>
-		</div>
+
+			<div class="zoom-controls">
+				<span>Zoom: </span>
+				<button id="zoom-out">−</button>
+				<input
+					type="range"
+					id="zoom-range"
+					min="0.5"
+					max="2"
+					step="0.1"
+					value="1"
+				/>
+				<button id="zoom-in">+</button>
+				<span id="zoom-value">100%</span>
+			</div>
+		</footer>
 	</body>
 </html>

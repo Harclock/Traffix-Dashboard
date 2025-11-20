@@ -1,9 +1,5 @@
 /* ========== MAIN BODY ========== */
 
-body {
-	font-size: 1.6rem;
-}
-
 .modules {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
@@ -67,7 +63,7 @@ body {
 }
 
 /* ========== FOOTER (MODULES OPTIONS) ========== */
-.view-options {
+footer {
 	position: sticky;
 	background: var(--dark-blue-500);
 	color: white;
@@ -78,21 +74,38 @@ body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	gap: 1.6rem; /* add horizontal spacing between groups */
+	gap: 1.6rem;
 }
 
-.view-options div {
+footer div {
 	display: flex;
 	flex-direction: row;
-	gap: 1.2rem; /* space between items inside groups */
+	gap: 1.2rem;
 	align-items: center;
 }
 
-.view-options button {
+footer button {
 	background: var(--dark-blue-100);
 	border: none;
 	color: white;
 	padding: 0.8rem;
 	border-radius: 0.8rem;
-	cursor: pointer;
+}
+
+.zoom-controls {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+	padding: 0.8rem 1.6rem;
+	font-family: sans-serif;
+}
+
+#zoom-range {
+	flex: 1;
+	accent-color: var(--dark-blue-100);
+}
+
+.zoom-controls button {
+	width: 3rem;
+	height: 3rem;
 }

@@ -1,21 +1,21 @@
 const overlay = document.querySelector(".overlay");
 const sidebar = document.querySelector(".sidebar");
-const openBtn = document.querySelector(".open-sidebar");
-const closeBtn = document.querySelector(".close-sidebar");
+const openBtn = document.getElementById("open-sidebar-button");
+const closeBtn = document.getElementById("close-sidebar-button");
 
 openBtn.onclick = () => {
 	sidebar.classList.add("open");
-	overlay.style.display = "block";
+	overlay.style.opacity = "0.5";
 };
 
 closeBtn.onclick = () => {
 	sidebar.classList.remove("open");
-	overlay.style.display = "none";
+	overlay.style.opacity = "0";
 };
 
 overlay.onclick = () => {
 	sidebar.classList.remove("open");
-	overlay.style.display = "none";
+	overlay.style.opacity = "0";
 };
 
 /**

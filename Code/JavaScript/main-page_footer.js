@@ -1,11 +1,13 @@
 // View mode toggles (grid/list) using class-based selectors
-const gridBtn = document.querySelector('.grid-view-btn') || document.getElementById('grid_view');
-const listBtn = document.querySelector('.list-view-btn') || document.getElementById('list_view');
+const modules = document.querySelector(".modules");
+
+const gridBtn = document.getElementById("grid-view-btn");
+const listBtn = document.getElementById("list-view-btn");
 
 gridBtn.onclick = () => {
-  modules.classList.remove('list-view');
+	modules.classList.remove("list-view");
 };
 
 listBtn.onclick = () => {
-  modules.classList.add('list-view');
+	modules.classList.add("list-view");
 };
