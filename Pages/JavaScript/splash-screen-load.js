@@ -1,4 +1,4 @@
-window.onload = handleSplashRedirect();
+/* window.onload = handleSplashRedirect();
 
 async function handleSplashRedirect() {
 	// Read durations from CSS custom properties, with JS fallbacks
@@ -69,3 +69,4 @@ async function handleSplashRedirect() {
 		window.location.href = target; // fallback
 	}
 }
+ */
