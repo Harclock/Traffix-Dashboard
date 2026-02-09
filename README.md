@@ -1,4 +1,4 @@
-# events-app
+# traffix-app
 
 ## Project setup
 ```
