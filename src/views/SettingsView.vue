@@ -1,3 +1,8 @@
+<script setup>
+import '@/assets/styles/CSS/base.css'
+import '@/assets/styles/CSS/modules/settings.css'
+</script>
+
 <template>
 	<AppHeader @open-sidebar="sidebarOpen = true" />
 

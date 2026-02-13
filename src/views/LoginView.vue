@@ -1,3 +1,8 @@
+<script setup>
+import '@/assets/styles/CSS/base.css'
+import '@/assets/styles/CSS/login.css'
+</script>
+
 <template>
 	<div class="page-in">
 		<header>

@@ -1,3 +1,7 @@
+/*
+da rifare perchè non funziona con le route
+
+
 .page-in {
 	-webkit-animation: fadeIn var(--anim-medium) ease-in;
 	animation: fadeIn var(--anim-medium) ease-in;
@@ -27,7 +31,8 @@
 	}
 }
 
-/* Optional default cross-fade timing */
+/* Optional default cross-fade timing 
 ::view-transition-group(root) {
 	animation-duration: 500ms;
 }
+*/
