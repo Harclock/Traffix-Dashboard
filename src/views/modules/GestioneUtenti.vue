@@ -1,8 +1,3 @@
-<script setup>
-import '@/assets/styles/CSS/base.css'
-import '@/assets/styles/CSS/modules/gestione-utenti.css'
-</script>
-
 <template>
   <div class="dashboard-container">
     <section class="table-section">
@@ -78,6 +73,9 @@ import '@/assets/styles/CSS/modules/gestione-utenti.css'
 </template>
 
 <script setup>
+import '@/assets/styles/CSS/base.css'
+import '@/assets/styles/CSS/modules/gestione-utenti.css'
+
 import { ref, onMounted } from 'vue'
 
 // 1. Variabili Reattive

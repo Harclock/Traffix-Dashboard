@@ -1,8 +1,3 @@
-<script setup>
-import '@/assets/styles/CSS/base.css'
-import '@/assets/styles/CSS/modules/gestione-moduli.css'
-</script>
-
 <template>
   <section class="main-layout">
     <div class="table-container">
@@ -69,6 +64,9 @@ import '@/assets/styles/CSS/modules/gestione-moduli.css'
 </template>
 
 <script setup>
+import '@/assets/styles/CSS/base.css'
+import '@/assets/styles/CSS/modules/gestione-moduli.css'
+
 import { ref, onMounted } from 'vue'
 
 const moduli = ref([]);

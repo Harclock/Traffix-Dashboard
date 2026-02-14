@@ -1,8 +1,3 @@
-<script setup>
-import '@/assets/styles/CSS/base.css'
-import '@/assets/styles/CSS/modules/visione-log.css'
-</script>
-
 <template>
   <section class="main-layout">
     <div class="table-container">
@@ -36,6 +31,9 @@ import '@/assets/styles/CSS/modules/visione-log.css'
 </template>
 
 <script setup>
+import '@/assets/styles/CSS/base.css'
+import '@/assets/styles/CSS/modules/visione-log.css'
+
 import { ref, onMounted } from 'vue'
 
 const logs = ref([]);

@@ -1,8 +1,3 @@
-<script setup>
-import '@/assets/styles/CSS/base.css'
-import '@/assets/styles/CSS/main-page.css'
-</script>
-
 <template>
 	<AppHeader @open-sidebar="sidebarOpen = true" />
 
@@ -47,6 +42,9 @@ import '@/assets/styles/CSS/main-page.css'
 </template>
 
 <script setup>
+import '@/assets/styles/CSS/base.css'
+import '@/assets/styles/CSS/main-page.css'
+
 import { ref } from 'vue'
 import AppHeader from '@/components/AppHeader.vue'
 import AppSidebar from '@/components/AppSidebar.vue'

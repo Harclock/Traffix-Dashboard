@@ -1,8 +1,3 @@
-<script setup>
-import '@/assets/styles/CSS/base.css'
-import '@/assets/styles/CSS/modules/gestione-ruoli.css'
-</script>
-
 <template>
   <section class="main-layout">
     <div class="table-container">
@@ -67,6 +62,9 @@ import '@/assets/styles/CSS/modules/gestione-ruoli.css'
 </template>
 
 <script setup>
+import '@/assets/styles/CSS/base.css'
+import '@/assets/styles/CSS/modules/gestione-ruoli.css'
+
 import { ref, onMounted } from 'vue'
 
 const ruoli = ref([]);
