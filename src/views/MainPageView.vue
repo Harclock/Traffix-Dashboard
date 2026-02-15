@@ -8,12 +8,16 @@
 
 	<main>
 		<div class="modules">
-			<div class="body-modules">Modulo 1</div>
-			<div class="body-modules w2 h2">Modulo 2</div>
-			<div class="body-modules h2">Modulo 3</div>
-			<div class="body-modules">Modulo 4</div>
-			<div class="body-modules w2 h3">Modulo 5</div>
-			<div class="body-modules h3">Modulo 6</div>
+			<div 
+				v-for="mod in moduliAutorizzati" 
+				:key="mod.id" 
+				class="body-modules"
+				:class="mod.classiCss"
+				@dblclick="navigaAModulo(mod.codice)"
+			>
+				<h3>{{ mod.titolo }}</h3>
+				<iframe v-if="mod.previewUrl" :src="mod.previewUrl" frameborder="0"></iframe>
+			</div>
 		</div>
 	</main>
 
