@@ -54,4 +54,18 @@ import AppHeader from '@/components/AppHeader.vue'
 import AppSidebar from '@/components/AppSidebar.vue'
 
 const sidebarOpen = ref(false)
+
+import { useRouter } from 'router'
+const router = useRouter()
+
+// Questo array verrebbe popolato dopo il login
+const moduliAutorizzati = ref([
+  { id: 1, codice: 'mappa_trento', titolo: 'Monitoraggio Traffico', classiCss: 'w2 h2' },
+  { id: 2, codice: 'segnalazioni', titolo: 'Gestione Problematiche', classiCss: '' },
+  { id: 3, codice: 'premi', titolo: 'Catalogo Premi', classiCss: 'h2' }
+])
+
+const navigaAModulo = (codice) => {
+  router.push(`/dashboard/${codice}`)
+}
 </script>
