@@ -14,8 +14,8 @@
 
 <script setup>
 import { ref } from 'vue'
-import AppHeader from '@/components/AppHeader.vue'
-import AppSidebar from '@/components/AppSidebar.vue'
+import AppHeader from '@/components/partials/AppHeader.vue'
+import AppSidebar from '@/components/partials/AppSidebar.vue'
 
 defineProps({
 	activeModule: {

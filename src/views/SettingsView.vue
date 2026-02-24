@@ -64,8 +64,8 @@ import '@/assets/styles/CSS/base.css'
 import '@/assets/styles/CSS/modules/settings.css'
 
 import { ref } from 'vue'
-import AppHeader from '@/components/AppHeader.vue'
-import AppSidebar from '@/components/AppSidebar.vue'
+import AppHeader from '@/components/partials/AppHeader.vue'
+import AppSidebar from '@/components/partials/AppSidebar.vue'
 import { useSettingsTabs } from '@/composables/useSettingsTabs'
 
 const sidebarOpen = ref(false)

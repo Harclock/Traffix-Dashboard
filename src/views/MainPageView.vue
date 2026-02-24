@@ -50,12 +50,12 @@ import '@/assets/styles/CSS/base.css'
 import '@/assets/styles/CSS/main-page.css'
 
 import { ref } from 'vue'
-import AppHeader from '@/components/AppHeader.vue'
-import AppSidebar from '@/components/AppSidebar.vue'
+import AppHeader from '@/components/partials/AppHeader.vue'
+import AppSidebar from '@/components/partials/AppSidebar.vue'
 
 const sidebarOpen = ref(false)
 
-import { useRouter } from 'router'
+import { useRouter } from '@/router/index.js'
 const router = useRouter()
 
 // Questo array verrebbe popolato dopo il login
