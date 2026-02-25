@@ -1,29 +1,20 @@
-import Vue from 'vue';
-import App from './App.vue';
-import router from './router';
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+import { createAuth0 } from '@auth0/auth0-vue' // Usa questo!
+import { domain, clientId } from '../auth_config.json'
 
-// Import the Auth0 configuration
-import { domain, clientId } from '../auth_config.json';
+const app = createApp(App)
 
-// Import the plugin here
-import { Auth0Plugin } from './auth';
+app.use(
+  createAuth0({
+    domain: domain,
+    clientId: clientId,
+    authorizationParams: {
+      redirect_uri: window.location.origin,
+    },
+    cacheLocation: 'localstorage' // Fondamentale per il "Remember Me"
+  })
+)
 
-// Install the authentication plugin here
-Vue.use(Auth0Plugin, {
-  domain,
-  clientId,
-  onRedirectCallback: (appState) => {
-    router.push(
-      appState && appState.targetUrl
-        ? appState.targetUrl
-        : window.location.pathname,
-    );
-  },
-});
-
-Vue.config.productionTip = false;
-
-new Vue({
-  router,
-  render: (h) => h(App),
-}).$mount('#app');
+app.use(router).mount('#app')

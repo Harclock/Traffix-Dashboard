@@ -13,7 +13,7 @@ import '@/assets/styles/CSS/login.css'
 			<div class="login-wrapper">
 				<div class="login-box">
 					<div class="logo-circle">
-						<img src="Multimedial/Img/logo.png" alt="Traffix Logo" />
+						<img src="@/assets/Multimedial/Img/logo.png" alt="Traffix Logo" />
 					</div>
 					<h2>Accedi al tuo account</h2>
 

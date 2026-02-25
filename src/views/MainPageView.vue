@@ -55,7 +55,7 @@ import AppSidebar from '@/components/partials/AppSidebar.vue'
 
 const sidebarOpen = ref(false)
 
-import { useRouter } from '@/router/index.js'
+import { useRouter } from 'vue-router'
 const router = useRouter()
 
 // Questo array verrebbe popolato dopo il login
