@@ -11,7 +11,7 @@ app.use(
     domain: domain,
     clientId: clientId,
     authorizationParams: {
-      redirect_uri: window.location.origin,
+      redirect_uri: window.location.origin // Riporta alla home dopo il login
     },
     cacheLocation: 'localstorage' // Fondamentale per il "Remember Me"
   })
